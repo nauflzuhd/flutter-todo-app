@@ -84,7 +84,7 @@ jobs:
 
       # Membuat APK release
       - name: Build Release APK
-        run: flutter build apk --release
+        run: flutter build apk --release --android-skip-build-dependency-validation
 
       # Membaca versi dari pubspec.yaml
       - name: Get Version
